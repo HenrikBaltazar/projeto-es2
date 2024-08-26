@@ -16,7 +16,14 @@ Atualmente possuimos um clone do twitter com interface de usuário, login e banc
 2. Instalar o MySQL
 3. Configurar o MySQL para porta 3306 com usuário e senha `root`
 4. Criar o banco de acordo com o esquema em `src/database/db.sql`
-   - Alternativamente é possivel subir um container em docker com
+5. Acessar o diretório `src/public`
+6. Executar o PHP com `php -S localhost:8080`
+7. O projeto estará sendo executado na porta 8080
+
+#### Docker
+Alternativamente, é possível executar o projeto via docker de duas formas diferentes:
+- Com PHP instalado no computador:
+substituir os passos 2,3 e 4 por:
 ```
 docker run -d \
   --name mysql \
@@ -25,8 +32,6 @@ docker run -d \
   -p 3306:3306 \
   mysql:latest
 ```
-
-4. Acessar o diretório `src/public`
-5. Executar o PHP com `php -S localhost:8080`
-6. O projeto estará sendo executado na porta 8080
-
+- 100% via docker compose: `docker compose up`
+  - logs com `docker compose logs -f`
+  - remover com `docker compose down -v`
