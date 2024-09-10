@@ -35,3 +35,7 @@ docker run -d \
 - 100% via docker compose: `docker compose up`
   - logs com `docker compose logs -f`
   - remover com `docker compose down -v`
+
+## Médias
+O semestre é dividido em 3 médias que serão liberadas gradativamente para completar o conteúdo.
+### :arrow_right: [M1](./m1/README.md)
